@@ -9,7 +9,7 @@ COPY README.md go.mod* go.sum* ./
 # RUN go get -d -v
 
 COPY . ./
-RUN go test math/
+RUN go test ./*/
 RUN go build
 
 # runtime image

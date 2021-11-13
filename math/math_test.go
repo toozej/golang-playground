@@ -11,3 +11,13 @@ func TestAdd(t *testing.T) {
 		t.Errorf("got %q, wanted %q", got, want)
 	}
 }
+
+func TestSubtract(t *testing.T) {
+
+	got := Subtract(10, 6)
+	want := 4
+
+	if got != want {
+		t.Errorf("got %q, wanted %q", got, want)
+	}
+}
